@@ -1,0 +1,20 @@
+{
+  "#demo-form": {
+    "text": "Some text...",
+    "email": "hello@markgoodyear.com",
+    "password": "Top secret password",
+    "tel": "123456789",
+    "number": "40",
+    "url": "http://markgoodyear.com",
+    "search": "Searching for...",
+    "checkbox": "true",
+    "radiogroup": "option2",
+    "color": "#BADA55",
+    "date": "013-09-01",
+    "month": "2013-09",
+    "range": "3",
+    "time": "17:39",
+    "select": "option2",
+    "multi": ["option1", "option3"]
+  }
+}

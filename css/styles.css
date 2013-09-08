@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box!important;
+  -moz-box-sizing: border-box!important;
+  box-sizing: border-box!important;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  color: #F66169;
+  text-decoration:none
+}
+
+.small-info {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.wrapper {
+  width: 720px;
+  margin: auto;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+section  {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+/* Header */
+.hero {
+  width: 100%;
+  text-align: center;
+  background: #687382;
+  padding: 40px 0;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.hero__heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -2px;
+}
+
+.hero__sub {
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.hero__actions {
+  margin-top: 40px;
+  display: block;
+}
+
+.btn-group {
+  list-style: none;
+  padding: 0;
+}
+
+.btn-group__item {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  width: 160px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-group__item a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 20px;
+  width: 100%;
+}
+
+.btn-group__item a:hover {
+  background: #fff;
+  color: #7A8498;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.input__label {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  line-height: 32px;
+}
+
+.input__field {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.428571429;
+}
+
+.input__group {
+  display: inline-block;
+}
+
+.input__multi-select {
+  height: auto;
+  padding: 5px;
+}
+
+.input__color {
+  padding: 5px;
+}
+
+.input__radio {
+  height: 24px;
+  vertical-align: middle;
+}
+
+.input__cb {
+  height: 32px;
+  vertical-align: middle;
+}
+
+pre {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px!important;
+  background: #f5f2f0;
+}
+
+.flush--top {
+  margin-top: 0;
+}
+
+.flush--btm {
+  margin-bottom: 0;
+}
+
+.share {
+  text-align: center;
+  border: none;
+  padding-top: 30px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}

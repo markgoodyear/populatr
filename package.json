@@ -1,0 +1,53 @@
+{
+  "name": "populatr",
+  "title": "Populatr",
+  "description": "Populate inputs to take the pain out of testing forms.",
+  "version": "1.0.0",
+  "year": "2013",
+  "keywords": [
+    "javascript",
+    "plugin",
+    "populate",
+    "forms",
+    "form",
+    "autofill",
+    "inputs",
+    "input"
+  ],
+  "authors": [
+    {
+      "name": "Mark Goodyear",
+      "email": "hello@markgoodyear.com",
+      "url": "markgoodyear.com",
+      "twitter": "@markgdyr",
+      "github": "github.com/markgoodyear"
+    }
+  ],
+  "contributors": [],
+  "demos": [
+    "markgoodyear.com/labs/populatr/"
+  ],
+  "repositories": [
+    {
+      "type": "GitHub",
+      "url": "github.com/markgoodyear/populatr"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "markgoodyear.com/labs/populatr/",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.3"
+  }
+}

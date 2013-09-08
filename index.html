@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+      #carbonads-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+      .carbonad {
+        background: rgba(255,255,255, .7);
+        border: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/34234/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+
+
+    <header class="hero">
+      <h1 class="hero__heading">Populat<em>r</em></h1>
+      <p class="hero__sub">Taking the pain out of testing forms.</p>
+      <!-- <p class="hero__sub">Make testing forms a pleasure.</p> -->
+
+      <ul class="hero__actions  btn-group">
+        <li class="btn-group__item"><a href="">Article</a></li><!--
+     --><li class="btn-group__item"><a href="">Download</a></li><!--
+     --><li class="btn-group__item"><a href="">Fork</a></li>
+      </ul>
+    </header>
+
+    <div class="wrapper">
+      <section class="intro  cf">
+        <h1>What is it?</h1>
+        <p>Populatr will populate any form with pre-defined data
+          so you don't have to keep filling in forms during testing. Take a look below
+          and see how it works.</p>
+          <p class="small-info">Browser support: IE8+ and other major browsers. No library required.<p>
+      </section>
+
+      <section class="demo  cf">
+        <h1 class="flush--btm">Demo</h1>
+        <div class="half">
+          <p>Populatr supports the following inputs:</p>
+          <form id="demo-form">
+
+            <div class="input">
+              <label class="input__label">Text:</label>
+              <input class="input__field" name="text" type="text">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Email:</label>
+              <input class="input__field" name="email" type="email">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Password</label>
+              <input class="input__field" name="password" type="password">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Telephone</label>
+              <input class="input__field" name="tel" type="tel">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Number</label>
+              <input class="input__field" name="number" type="number">
+            </div>
+
+            <div class="input">
+              <label class="input__label">URL</label>
+              <input class="input__field" name="url" type="url">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Search</label>
+              <input class="input__field" name="search" type="search">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Checkbox</label>
+              <input class="input__cb" name="checkbox" type="checkbox"> Check me
+            </div>
+
+            <div class="input">
+              <label class="input__label">Radio</label>
+              <div class="input__group">
+                <input class="input__radio" type="radio" name="radiogroup" value="option1"> Option 1 <br>
+                <input class="input__radio" type="radio" name="radiogroup" value="option2"> Option 2 <br>
+                <input class="input__radio" type="radio" name="radiogroup" value="option3"> Option 3
+              </div>
+            </div>
+
+            <div class="input">
+              <label class="input__label">Color</label>
+              <input class="input__field  input__color" name="color" type="color">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Date</label>
+              <input class="input__field" name="date" type="date" value="2014-01-01">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Month</label>
+              <input class="input__field" name="month" type="month">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Time</label>
+              <input class="input__field" name="time" type="time">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Range</label>
+              <input class="input__field" name="range" type="range" min="1" max="10">
+            </div>
+
+            <div class="input">
+              <label class="input__label">Select</label>
+              <select class="input__field" name="select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div class="input">
+              <label class="input__label">Multi-Select</label>
+              <select multiple class="input__field  input__multi-select" name="multi">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="half">
+          <p class="flush--tp"><strong>Behind the scenes:</strong></p>
+<pre class="language-javascript"><code>Populatr.init(true, {
+  '#demo-form': {
+    'text': 'Some text...',
+    'email': 'hello@markgoodyear.com',
+    'password': 'Top secret password',
+    'tel': '123456789',
+    'number': '40',
+    'url': 'http://markgoodyear.com',
+    'search': 'value',
+    'checkbox': 'true',
+    'radiogroup': 'option2',
+    'color': '#BADA55',
+    'date': '013-09-01',
+    'month': '2013-09',
+    'range': '3',
+    'time': '17:39',
+    'select': 'option2',
+    'multi': ['option1', 'option3']
+  },
+});</code></pre>
+
+        </div>
+
+
+      </section>
+
+      <div style="clear:both"></div>
+
+      <section class="how-to  cf">
+        <h1>How to use</h1>
+        <p>Simply add populatr.js to the <strong>footer</strong>:</p>
+
+<pre class="language-markup"><code>&lt;script src="populatr.js">&lt;/script&gt;</code></pre>
+
+        <h2>Basic setup</h2>
+        <p>Populatr hooks onto the input's name attrbute. The form is specified by either
+          an ID or class.</p>
+          <strong><em>Example form:</em></strong>
+<pre class="language-markup"><code>&lt;form id="demo-form"&gt;
+  &lt;input name="first-name" type="text"&gt;
+  &lt;input name="last-name" type="text"&gt;
+  &lt;input name="email" type="email"&gt;
+&lt;/form&gt;
+</code></pre>
+
+        <strong><em>Example form setup:</em></strong>
+<pre class="language-javascript"><code>Populatr.init(true, {               // Initiate Populatr. Set false to quickly disable.
+  '#demo-form': {                   // CSS selecor to match form markup
+    'first-name': 'Mark',           // 'Input name': 'Input value'
+    'last-name': 'Goodyear',
+    'email': 'hello@markgoodyear'
+  }
+});</code></pre>
+
+        <h2>Multiple forms</h2>
+        <p>Multiple forms are very simple to set up:</p>
+<pre class="language-javascript"><code>Populatr.init(true, {
+  '#form-one': {
+    // Form one inputs...
+  },
+  '#form-two': {
+    // Form two inputs...
+  },
+  '#form-three': {
+    // Form three inputs...
+  }
+});</code></pre>
+
+        <h2>Advanced setup</h2>
+        <p>Rather than define all form data within the page, you can specify to use an external
+          JSON file. This can be useful incase you have large amounts of form data.</p>
+
+        <strong><em>Initiate Populatr with JSON:</em></strong>
+        <pre class="language-javascript"><code>Populatr.init(true, 'populatr.json'); // Filename can be anything</code></pre>
+          <strong><em>populatr.json:</em></strong>
+<pre class="language-javascript"><code>{
+  "#demo-form": {
+    "first-name": "Mark",
+    "last-name": "Goodyear",
+    "email": "hello@markgoodyear"
+  }
+}</code></pre>
+<p class="small-info">Remember to use double quotes for JSON files.<p>
+
+          </section>
+
+          <section class="support  cf">
+            <h1>Support</h1>
+            <p>If you have any issues, feedback or suggestions, please log an issue on <a target="_blank" href="https://github.com/markgoodyear/browserblast">GitHub</a> or find me on Twitter: <a href="http://twitter.com/markgdyr">@markgdyr</a>.</p>
+          </section>
+
+          <section class="share  cf">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Launch past ancient IE versions with BrowserBlast plugin" data-via="markgdyr" data-size="large">Tweet</a>
+
+            <a href="https://twitter.com/markgdyr" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @markgdyr</a>
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </section>
+
+    </div>
+
+    <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="js/src/populatr.js"></script>
+    <script src="js/vendor/prism.js"></script>
+
+    <script>
+      Populatr.init(true, {
+        "#demo-form": {
+          "text": "Some text...",
+          "email": "hello@markgoodyear.com",
+          "password": "Top secret password",
+          "tel": "123456789",
+          "number": "40",
+          "url": "http://markgoodyear.com",
+          "search": "Searching for...",
+          "checkbox": "true",
+          "radiogroup": "option2",
+          "color": "#BADA55",
+          "date": "013-09-01",
+          "month": "2013-09",
+          "range": "3",
+          "time": "17:39",
+          "select": "option2",
+          "multi": ["option1", "option3"]
+        }
+      });
+      // */
+      // Populatr.init(true, 'populatr.json');
+    </script>
+
+
+  </body>
+</html>

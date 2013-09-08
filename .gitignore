@@ -1,0 +1,9 @@
+# System files
+.DS_Store
+
+# Node modules
+node_modules
+.log
+
+# Experiments
+_experiments/
