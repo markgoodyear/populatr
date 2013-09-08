@@ -15,9 +15,9 @@ Project files and folder structure.
 
 * css/ - CSS for plugin and demo site
 * js/
-** dist/ - Distribution files
-** src/ - The plugin source which Grunt builds from
-** lib/ - Any libraries used
+  * dist/ - Distribution files
+  * src/ - The plugin source which Grunt builds from
+  * lib/ - Any libraries used
 
 ## NodeJS and Grunt
 This project uses [Node JS](http://nodejs.org/) and [Grunt](http://gruntjs.com/).
