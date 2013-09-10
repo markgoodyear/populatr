@@ -13,8 +13,8 @@ window.Populatr = (function (window, document, undefined) {
 
     init: function(active, forms) {
 
-      // Only run if active is true (boolean or string)
-      if (active === true || active === 'true') {
+      // Only run if active is true
+      if (active) {
 
         // indexOf for IE8
         // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
