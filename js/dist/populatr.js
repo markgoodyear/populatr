@@ -1,9 +1,9 @@
 /*!
- *  Populatr v1.0.0
+ *  Populatr v1.1.0
  *  Author: Mark Goodyear | @markgdyr | markgoodyear.com
  *  Demo: markgoodyear.com/labs/populatr/
  *  GitHub: github.com/markgoodyear/populatr
- *  Copyright 2013 | MIT
+ *  Copyright 2014 | MIT
  */
 window.Populatr = (function (window, document, undefined) {
 
