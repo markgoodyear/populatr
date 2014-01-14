@@ -83,7 +83,7 @@ window.Populatr = (function (window, document, undefined) {
               var inputValue = inputElem[inputName],
                   inputByName = document.querySelector(form + ' [name="' + inputName + '"]'),
                   inputByValue = document.querySelector(form + ' [value="' + inputValue + '"]'),
-                  inputType;
+                  inputType = null;
 
               // Make sure input exists
               if (inputByName) {
@@ -92,6 +92,8 @@ window.Populatr = (function (window, document, undefined) {
                   inputType = inputByName.type;
                 } else if (inputByName.tagName.toLowerCase() === 'select') {
                   inputType = 'select';
+                } else if (inputByName.tagName.toLowerCase() === 'textarea') {
+                  inputType = 'textarea';
                 }
 
                 // Switch input type
@@ -111,6 +113,7 @@ window.Populatr = (function (window, document, undefined) {
                   case 'month':
                   case 'range':
                   case 'time':
+                  case 'textarea':
                     inputByName.value = inputValue;
                     break;
 
